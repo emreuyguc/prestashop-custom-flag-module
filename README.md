@@ -1,4 +1,6 @@
-## Prestashop CustomFlag Module
+![GitHub Release](https://img.shields.io/github/v/release/emreuyguc/prestashop-euu_customflag)
+
+## Prestashop CustomFlag Module 
 
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/emreuyguc)
 
@@ -34,10 +36,16 @@ For more information, visit our website or contact us. The CustomFlag module is 
 * PrestaShop version 1.7.6.8 to 1.7.8.x (compatible with 1.7.6.8, 1.7.7.x, and 1.7.8.x)
 
 ### Images
-* Sticker Editor ![Flag Editor](./documentation/images/flag-editor.png)
-* Sticker Groups ![Flag Groups](./documentation/images/flag-groups.png)
+* Good Flags ![Preview](./documentation/images/good-flags.png)
+* You can edit global css ![Preview](./documentation/images/global-css.png)
+* Query Filters  ![Flag Editor](./documentation/images/query-filter.png)
+* Flag Editor ![Flag Editor](./documentation/images/flag-editor.png)
+* Flag Groups ![Flag Groups](./documentation/images/flag-groups.png)
 * Group Edit ![Flag Group Edit](./documentation/images/flag-group-edit.png)
+* Group Flag Add ![Flag Group Edit](./documentation/images/flag-add.png)
 * Preview ![Preview](./documentation/images/catalog-preview.png)
+
+
 
 ### Usage
 

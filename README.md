@@ -1,8 +1,8 @@
 [![GitHub Release](https://img.shields.io/github/v/release/emreuyguc/prestashop-euu_customflag)](https://github.com/emreuyguc/prestashop-euu_customflag/releases/download/v1.0/euu_customflag_v1.0.zip)
 
-## Prestashop CustomFlag Module 
-
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/emreuyguc)
+
+## Prestashop CustomFlag Module 
 
 #### Hello and welcome to the CustomFlag module!
 

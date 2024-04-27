@@ -1,0 +1,139 @@
+version: "3.8"
+
+services:
+# Prestashop
+  ps1786:
+    image: prestashop/prestashop:1.7.8.6-7.4-apache
+    container_name: ${MODULE_NAME}-ps1786
+    networks:
+      net-prestashop:
+    depends_on:
+      - ${DB_SERVER}
+    ports:
+      - "${PS1786_PORT}:80"
+    environment:
+      - PS_DEV_MODE=${PS_DEV_MODE}
+      - DB_SERVER=${DB_SERVER}
+      - DB_USER=${DB_USER}
+      - DB_PASSWD=${DB_PASSWD}
+      - DB_NAME=ps1786
+      - PS_INSTALL_AUTO=${PS_INSTALL_AUTO}
+      - PS_INSTALL_DB=${PS_INSTALL_DB}
+      - PS_ERASE_DB=${PS_ERASE_DB}
+      - PS_DOMAIN=localhost:${PS1786_PORT}
+      - PS_FOLDER_ADMIN=${PS_FOLDER_ADMIN}
+      - ADMIN_MAIL=${ADMIN_MAIL}
+      - ADMIN_PASSWD=${ADMIN_PASSWD}
+    volumes:
+      -   "./../:/var/www/html/modules/${MODULE_NAME}"
+
+  ps1782:
+    image: prestashop/prestashop:1.7.8.2-7.4-apache
+    container_name: ${MODULE_NAME}-ps1782
+    networks:
+      net-prestashop:
+    depends_on:
+      - ${DB_SERVER}
+    ports:
+      - "${PS1782_PORT}:80"
+    environment:
+      - PS_DEV_MODE=${PS_DEV_MODE}
+      - DB_SERVER=${DB_SERVER}
+      - DB_USER=${DB_USER}
+      - DB_PASSWD=${DB_PASSWD}
+      - DB_NAME=ps1782
+      - PS_INSTALL_AUTO=${PS_INSTALL_AUTO}
+      - PS_INSTALL_DB=${PS_INSTALL_DB}
+      - PS_ERASE_DB=${PS_ERASE_DB}
+      - PS_DOMAIN=localhost:${PS1782_PORT}
+      - PS_FOLDER_ADMIN=${PS_FOLDER_ADMIN}
+      - ADMIN_MAIL=${ADMIN_MAIL}
+      - ADMIN_PASSWD=${ADMIN_PASSWD}
+    volumes:
+      -   "./../:/var/www/html/modules/${MODULE_NAME}"
+
+  ps1778:
+    image: prestashop/prestashop:1.7.7.8-7.2-apache
+    container_name: ${MODULE_NAME}-ps1778
+    networks:
+      net-prestashop:
+    depends_on:
+      - ${DB_SERVER}
+    ports:
+      - "${PS1778_PORT}:80"
+    environment:
+      - PS_DEV_MODE=${PS_DEV_MODE}
+      - DB_SERVER=${DB_SERVER}
+      - DB_USER=${DB_USER}
+      - DB_PASSWD=${DB_PASSWD}
+      - DB_NAME=ps1778
+      - PS_INSTALL_AUTO=${PS_INSTALL_AUTO}
+      - PS_INSTALL_DB=${PS_INSTALL_DB}
+      - PS_ERASE_DB=${PS_ERASE_DB}
+      - PS_DOMAIN=localhost:${PS1778_PORT}
+      - PS_FOLDER_ADMIN=${PS_FOLDER_ADMIN}
+      - ADMIN_MAIL=${ADMIN_MAIL}
+      - ADMIN_PASSWD=${ADMIN_PASSWD}
+    volumes:
+      -   "./../:/var/www/html/modules/${MODULE_NAME}"
+
+  ps1769:
+    image: prestashop/prestashop:1.7.6.9-7.2-apache
+    container_name: ${MODULE_NAME}-ps1769
+    networks:
+      net-prestashop:
+    depends_on:
+      - ${DB_SERVER}
+    ports:
+      - "${PS1769_PORT}:80"
+    environment:
+      - PS_DEV_MODE=${PS_DEV_MODE}
+      - DB_SERVER=${DB_SERVER}
+      - DB_USER=${DB_USER}
+      - DB_PASSWD=${DB_PASSWD}
+      - DB_NAME=ps1769
+      - PS_INSTALL_AUTO=${PS_INSTALL_AUTO}
+      - PS_INSTALL_DB=${PS_INSTALL_DB}
+      - PS_ERASE_DB=${PS_ERASE_DB}
+      - PS_DOMAIN=localhost:${PS1769_PORT}
+      - PS_FOLDER_ADMIN=${PS_FOLDER_ADMIN}
+      - ADMIN_MAIL=${ADMIN_MAIL}
+      - ADMIN_PASSWD=${ADMIN_PASSWD}
+    volumes:
+      -   "./../:/var/www/html/modules/${MODULE_NAME}"
+
+
+# Database
+  mysql57:
+    image: mysql:5.7.41
+    container_name: ${MODULE_NAME}-mysql57
+    networks:
+      net-prestashop:
+    ports:
+      - "${MYSQL57_PORT}:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWD}
+
+  mysql80:
+    image: mysql:8.0
+    container_name: ${MODULE_NAME}-mysql80
+    networks:
+      net-prestashop:
+    ports:
+      - "${MYSQL80_PORT}:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWD}
+
+  mariadb10:
+    image: mariadb:latest
+    container_name: ${MODULE_NAME}-mariadb10
+    networks:
+      net-prestashop:
+    ports:
+      - "${MARIADB10_PORT}:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWD}
+
+networks:
+  net-prestashop:
+    driver: bridge

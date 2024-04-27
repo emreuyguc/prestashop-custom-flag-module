@@ -1,4 +1,4 @@
-![GitHub Release](https://img.shields.io/github/v/release/emreuyguc/prestashop-euu_customflag)
+[![GitHub Release](https://img.shields.io/github/v/release/emreuyguc/prestashop-euu_customflag)](https://github.com/emreuyguc/prestashop-euu_customflag/releases/download/v1.0/euu_customflag_v1.0.zip)
 
 ## Prestashop CustomFlag Module 
 

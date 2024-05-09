@@ -1,11 +1,11 @@
 [![GitHub Release](https://img.shields.io/github/v/release/emreuyguc/prestashop-euu_customflag)](https://github.com/emreuyguc/prestashop-euu_customflag/releases/download/v1.0/euu_customflag_v1.0.zip)
 [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/emreuyguc)
 
-## Prestashop CustomFlag Module 
+## Prestashop Custom Flag Module 
 
-#### Hello and welcome to the CustomFlag module!
+#### Hello and welcome to the Custom Flag module!
 
-We are excited to introduce our CustomFlag module, designed to make your product catalogs visually appealing and attention-grabbing. This special module is perfect for Prestashop users, allowing you to add custom labels (also known as stickers or flags) to your product displays. These labels typically appear in the corners of product images and feature colorful, eye-catching text or graphics.
+We are excited to introduce our Custom Flag module, designed to make your product catalogs visually appealing and attention-grabbing. This special module is perfect for Prestashop users, allowing you to add custom labels (also known as stickers or flags) to your product displays. These labels typically appear in the corners of product images and feature colorful, eye-catching text or graphics.
 
 With CustomFlag, you can create unique labels for specific products or product groups, fully customizable to your liking. You can also set these labels to appear during specific time periods, allowing you to offer special deals and attract customers during campaigns or events.
 
